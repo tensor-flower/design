@@ -1,5 +1,6 @@
 #include<iostream>
 #include "overload.hpp"
+#include "inherit.hpp"
 using namespace std;
 class A{
     int data = 0;
@@ -26,6 +27,7 @@ public:
         *p = i;
     }
 };
+//g++ -std=c++11 -I ./ *.cpp
 int main(){
     // A a(1, 2);
     // a.printData();
@@ -33,10 +35,14 @@ int main(){
     // b.printData();
     // b.setP(3);
     // a.printData();
-    Complex c(1,2);
-    Complex d(3,4);
-    c.print();
-    auto e = c+d;
-    e.print();
+ 
+    // Complex c(1,2);
+    // Complex d(3,4);
+    // c.print();
+    // auto e = c+d;
+    // e.print();
+
+    // Base b;
+    Child c(1);
     return 0;
 }
