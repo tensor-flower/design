@@ -43,6 +43,12 @@ int main(){
     // e.print();
 
     // Base b;
-    Child c(1);
+    // Child c(1);
+
+    Runner r;
+    // auto p = new P();
+    auto c = new C();
+    // r.run(p);
+    r.run(c);
     return 0;
 }
