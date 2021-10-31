@@ -4,6 +4,7 @@ class Base{
 public:
     Base();
     Base(int a);
+    static int s;
 };
 
 class Child : public Base{

@@ -43,7 +43,11 @@ int main(){
     // auto e = c+d;
     // e.print();
 
-    // Base b;
+    Base b;
+    cout<<b.s<<endl;
+    Base c;
+    cout<<c.s<<endl;
+    cout<<Base::s << endl;
     // Child c(1);
 
     // Runner r;

@@ -1,8 +1,10 @@
 #include "inherit.hpp"
 #include<iostream>
 using namespace std;
+int Base::s = 0; // static member var must be initialized outside class
 Base::Base (){
     cout<<"base"<<endl;
+    ++s;
 }
 Base::Base(int a){
     cout<<"base "<<a<<endl;
