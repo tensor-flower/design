@@ -1,6 +1,7 @@
 #include<iostream>
 #include "overload.hpp"
 #include "inherit.hpp"
+#include "generic.cpp" // implementation and declaration must be in the same file
 using namespace std;
 class A{
     int data = 0;
@@ -45,10 +46,13 @@ int main(){
     // Base b;
     // Child c(1);
 
-    Runner r;
+    // Runner r;
     // auto p = new P();
-    auto c = new C();
+    // auto c = new C();
     // r.run(p);
-    r.run(c);
+    // r.run(c);
+
+    Stack<int> s(2);
+    s.a();
     return 0;
 }
